@@ -3,12 +3,12 @@ var randomNumber = getRandomNumber(upper);
 var guess;
 var attempts = 0;
 
-function getRandomNumber(upper) {
+function getrandomNumber(upper) {
   return Math.floor( Math.random() * upper ) + 1;
 }
 
 while ( guess !== randomNumber ) {
-  guess = getRandomNumber( upper );
+  guess = getrandomNumber( upper );
   attempts += 1;
 }
 document.write("<p>The random number was: " + randomNumber + "<p>");
