@@ -30,3 +30,21 @@ var students = [
     points: '350'
   }
 ];
+
+ var message = '';
+ var student;
+
+ function printMessage(message) {
+  var outputDiv = document.getElementById('output');
+  outputDiv.innerHTML = message;
+}
+
+for (var i = 0; i < students.length; i+=1) {
+  student = students[i];
+  message =  message + '<h2>Student: ' + student.name + '</h2>';
+  message = message +  '<p>Track: '  + student.track + '</p>';
+  message = message + '<p>Achievements: '  + student.achievements + '</p>';
+  message = message + '<p>Points: '  + student.points + '</p>';
+}
+printMessage(message);
+
