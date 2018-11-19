@@ -7,7 +7,7 @@ function print(message) {
   outputDiv.innerHTML = message;
 }
 
-function studentReport (student) {
+function getStudentReport (student) {
  var report = '<h2>Student: ' + student.name + '</h2>';
   report += '<p>Track: ' + student.track + '</p>';
   report += '<p>Points: ' + student.points + '</p>';
@@ -23,7 +23,7 @@ while (true) {
   for (var i = 0; i < students.length; i += 1) {
     student = students[i];
     if (student.name === search) {
-      message = studentReport(student);
+      message = getStudentReport(student);
       print(message);
     }
   }
